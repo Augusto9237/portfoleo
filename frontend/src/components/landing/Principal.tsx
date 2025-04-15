@@ -10,7 +10,7 @@ export default function Principal(props: PrincipalProps) {
 	return (
 		<div
 			className="
-                flex flex-col items-center justify-center min-h-screen
+                flex flex-col items-center justify-center min-h-screen relative
                 bg-[url('/principal.jpg')] bg-cover bg-center bg-blend-multiply
             "
 		>
@@ -28,7 +28,7 @@ export default function Principal(props: PrincipalProps) {
 				</div>
 				<Tecnologias lista={props.tecnologias} />
 			</div>
-			<div className="bg-linear-to-b from-transparent to-black h-20 w-full"/>
+			<div className="bg-linear-to-b from-transparent to-black h-28 absolute bottom-0 left-0 right-0"/>
 		</div>
 	)
 }
