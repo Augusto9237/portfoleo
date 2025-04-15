@@ -2,6 +2,7 @@ import Image from "next/image"
 import Container from "./Container"
 import Link from "next/link"
 import Menu from "./Menu"
+import { IconBrandGithub, IconBrandInstagram, IconBrandLinkedin } from "@tabler/icons-react"
 
 export default function Cabecalho() {
 	return (
@@ -9,18 +10,19 @@ export default function Cabecalho() {
 			<Container className="flex-1 flex justify-center sm:justify-between items-center">
 				<div className="flex items-center gap-10">
 					<Link href="/" className="hidden sm:block">
-						<Image src="/logo.png" alt="Logo" width={56} height={30} />
+						<Image src="/logo.png" alt="Logo" width={56} height={25} />
 					</Link>
 					<Menu />
 				</div>
-				<div className="hidden sm:flex items-center">
-					<Link
-						href="https://www.linkedin.com/in/leonardo-leit%C3%A3o-8a5813186/"
-						target="_blank"
-						className="bg-blue-700 rounded-full px-7 py-1 text-sm font-bold"
-					>
-						Perfil
+				<div className="flex gap-4 max-sm:hidden">
+					<Link href="https://www.linkedin.com/in/-augusto-sousaa" target="_blank">
+						<IconBrandLinkedin/>
 					</Link>
+
+					<Link href="https://github.com/Augusto9237" target="_blank">
+						<IconBrandGithub />
+					</Link>
+					<IconBrandInstagram />
 				</div>
 			</Container>
 		</header>
