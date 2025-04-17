@@ -1,4 +1,5 @@
 import Image from "next/image"
+import ButtonDownloadResume from "../button-download"
 
 export default function MiniCV() {
 	return (
@@ -19,11 +20,12 @@ export default function MiniCV() {
 					<span>Desenvolvedor Full Stack</span>
 				</div>
 				<p className="text-sm text-center md:text-left lg:text-center xl:text-left">
-					Mestre em Informática Aplicada e fundador da Cod3r, já treinou mais de 420.000
-					alunos. São mais de 16 anos como professor. Há 20 anos atua na área como
-					desenvolvedor de softwares e trabalhou como arquiteto de software em grandes
-					projetos para o Governo Federal.
+					Sou facisnado por criar experiências de usuário elegantes e intuitivas, com foco em front-end e mobile. Também domino o back-end, o que me permite entregar soluções completas e integradas. Sempre buscando inovação, estou pronto para novos desafios que unam design e funcionalidade
 				</p>
+
+				<div>
+					<ButtonDownloadResume />
+				</div>
 			</div>
 		</div>
 	)

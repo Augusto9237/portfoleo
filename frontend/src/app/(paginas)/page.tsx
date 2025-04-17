@@ -12,12 +12,19 @@ export default async function Home() {
 	return (
 		<div>
 			<Principal tecnologias={tecnologias.destaques} />
-			<Container className="py-16 flex flex-col items-center gap-10">
-				<Projetos titulo="Destaque" lista={projetos.destaques} />
-				<Projetos titulo="Web" lista={projetos.web} />
-				<Projetos titulo="Mobile" lista={projetos.mobile} />
-				<Curriculo tecnologias={tecnologias.todas} />
-			</Container>
-		</div>
+			<section id='projetos'>
+				<Container className="pt-24 flex flex-col items-center gap-10 min-h-screen">
+					<Projetos titulo="Destaque" lista={projetos.destaques} />
+					<Projetos titulo="Web" lista={projetos.web} />
+					<Projetos titulo="Mobile" lista={projetos.mobile} />
+				</Container>
+			</section>
+
+			<section id='curriculo'>
+				<Container className="pt-24 flex flex-col items-center gap-10 min-h-screen">
+					<Curriculo tecnologias={tecnologias.todas} />
+				</Container>
+			</section >
+		</div >
 	)
 }
